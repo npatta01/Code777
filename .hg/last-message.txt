@@ -1,1 +1,1 @@
-Added screenshots
+added info about mercurial repo
