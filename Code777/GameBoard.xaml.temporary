@@ -1,0 +1,52 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:Code777_View="clr-namespace:Code777.View"
+	mc:Ignorable="d"
+	x:Class="Code777.GameBoard"
+	d:DesignWidth="420" d:DesignHeight="468"
+             DataContext="{Binding Game, Source={StaticResource Locator}}">
+
+	<Grid x:Name="LayoutRoot" Background="Transparent">
+		<Grid  d:LayoutRounding="Auto" Background="Black">
+			<Grid.RowDefinitions>
+				<RowDefinition />
+				<RowDefinition />
+				<RowDefinition />
+			</Grid.RowDefinitions>
+                		
+			<Grid.ColumnDefinitions>
+                			
+                			
+				<ColumnDefinition Width="0.45%"/>
+				<ColumnDefinition />
+			</Grid.ColumnDefinitions>
+			<Image Grid.Column="0" Grid.Row="0" Source="Image/Player1.jpg"/>
+			<Code777_View:CardsHandSmall Grid.Column="1"
+				DataContext="{Binding NorthCard}"
+				 />
+
+			<Image Grid.Column="0"
+				Grid.Row="1"
+				Source="Image/Player2.jpg"  />
+			<Code777_View:CardsHandSmall Grid.Column="1"
+				Grid.Row="1"
+				DataContext="{Binding SouthCard}"
+				
+				 />
+
+
+			<Image Grid.Column="0"
+				Grid.Row="2"
+				Source="Image/Player3.jpg" />
+			<Code777_View:CardsHandSmall Grid.Column="1"
+				Grid.Row="2"
+				DataContext="{Binding WestCard}"
+				
+				 />
+
+		</Grid>
+	</Grid>
+</UserControl>

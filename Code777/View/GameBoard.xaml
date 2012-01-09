@@ -1,0 +1,34 @@
+﻿<!-- A control to show the board that shows opponents card -->
+    <UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:views="clr-namespace:Code777.View"
+	mc:Ignorable="d"
+	x:Class="Code777.View.GameBoard"
+	d:DesignWidth="512" d:DesignHeight="552"
+    DataContext="{Binding Game, Source={StaticResource Locator}}">
+
+    <Grid x:Name="LayoutRoot"
+          Background="Transparent"
+          d:LayoutRounding="Auto"
+          UseLayoutRounding="True">
+		<Grid   Background="Black">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <views:FullPlayerControl Grid.Row="0" DataContext="{Binding GetOpponent1, Mode=OneWay}"/>
+            <views:FullPlayerControl Grid.Row="1" DataContext="{Binding GetOpponent2, Mode=OneWay}"/>
+			<views:FullPlayerControl Grid.Row="2" DataContext="{Binding GetOpponent3, Mode=OneWay}"/>
+
+        </Grid>
+
+
+
+        
+	</Grid>
+</UserControl>

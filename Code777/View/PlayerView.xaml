@@ -1,0 +1,30 @@
+﻿<!-- A control to show a player and his information -->
+    <UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="Code777.View.PlayerView"
+	d:DesignWidth="136" d:DesignHeight="208"
+             DataContext="{Binding Game, Source={StaticResource Locator}}">
+
+
+    <Grid x:Name="LayoutRoot"
+          Background="Transparent"
+          d:DataContext="{Binding GetOpponent1}"
+          DataContext="{Binding}">
+		
+			<Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                
+            </Grid.RowDefinitions>
+			<Image Grid.Row="0"  Source="{Binding ImagePath}" MaxHeight="100"  />
+			<TextBlock Grid.Row="1" Text="{Binding Name}" TextAlignment="Center"/>
+        <TextBlock Grid.Row="1"
+                   Text="{Binding Score}"
+                   TextAlignment="Right" />
+
+    </Grid>
+</UserControl>

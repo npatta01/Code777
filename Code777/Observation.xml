@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Observations>
+  <Observation>
+
+    <text>Rack:Sum >=18</text>
+  </Observation>
+  <Observation>
+
+    <text>Sum less than 18</text>
+  </Observation>
+
+  <Observation>
+
+    <text>Sum less than 12</text>
+
+  </Observation>
+  <Observation>
+
+    <text>Sum >= than 12</text>
+
+  </Observation>
+
+  <Observation>
+
+    <text>Number in Different Colors</text>
+
+  </Observation>
+
+  <Observation>
+
+    <text>Cards are Different Colors </text>
+
+  </Observation>
+
+
+  <Observation>
+
+    <text>Rack:all even </text>
+
+  </Observation>
+  <Observation>
+
+    <text>Rack:all odd </text>
+
+  </Observation>
+
+  <Observation>
+
+    <text>Has two identical cards</text>
+
+  </Observation>
+
+  <Observation>
+
+    <text>Consecutive Numbers</text>
+
+  </Observation>
+  <Observation>
+
+    <text># colors</text>
+
+  </Observation>
+
+  <Observation>
+
+    <text>Color appear at least three times</text>
+
+  </Observation>
+
+
+
+  <Observation>
+
+    <text>Missing Number</text>
+  </Observation>
+
+  <Observation>
+
+    <text>Have a green 1</text>
+  </Observation>
+
+  <Observation>
+
+    <text>Have a black 5</text>
+  </Observation>
+
+  <Observation>
+
+    <text>Have a pink 7</text>
+  </Observation>
+
+
+
+
+  <Observation>
+
+    <text>Have a 3</text>
+  </Observation>
+
+
+  <Observation>
+
+    <text>Have a 2</text>
+  </Observation>
+
+  <Observation>
+
+    <text>Have yellow 7</text>
+  </Observation>
+
+  <Observation>
+
+    <text>Have pink 6</text>
+  </Observation>
+
+  <Observation>
+
+    <text>Have green 6</text>
+  </Observation>
+
+  <Observation>
+
+    <text>Have Blue 7</text>
+  </Observation>
+
+  <Observation>
+
+    <text>Have 7 of other color</text>
+  </Observation>
+
+  <Observation>
+
+    <text>More Blue Card </text>
+  </Observation>
+
+  <Observation>
+
+    <text>More Pink Card </text>
+  </Observation>
+
+  <Observation>
+
+    <text>More Brown Card </text>
+  </Observation>
+
+  <Observation>
+
+    <text>More Black Card </text>
+  </Observation>
+
+  <Observation>
+
+    <text>More Red Card </text>
+  </Observation>
+
+  <Observation>
+
+    <text>More Yellow Card </text>
+
+  </Observation>
+  <Observation>
+
+    <text>More Green Card </text>
+
+  </Observation>
+
+</Observations>

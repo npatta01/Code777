@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Questions>
+  <Question>
+    <id>1</id>
+    <text>On how many racks is the sum of the numbers 18 or more? </text>
+    <type>Rack</type>
+    <Answers></Answers>
+  </Question>
+
+  <Question>
+    <id>2</id>
+    <text>On how many racks is the sum of the numbers 12 or less? </text>
+    <type>Rack</type>
+  </Question>
+
+
+  <Question>
+    <id>3</id>
+    <text>On how many racks is there the same number in different colors, e.g., a blue 7 and a yellow 7?</text>
+    <type>Rack</type>
+  </Question>
+
+  <Question>
+    <id>4</id>
+    <text>On how many racks are there three different colors? </text>
+    <type>Rack</type>
+  </Question>
+
+
+  <Question>
+    <id>5</id>
+    <text>On how many racks are the numbers either all even or all uneven? </text>
+    <type>Rack</type>
+  </Question>
+
+  <Question>
+    <id>6</id>
+    <text>On how many racks are there at least two identical cards (same number and same color)?</text>
+    <type>Rack</type>
+  </Question>
+
+  <Question>
+    <id>7</id>
+    <text>On how many racks do you see three consecutive numbers? </text>
+    <type>Rack</type>
+  </Question>
+  <Question>
+    <id>8</id>
+    <text>How many colors do you see? </text>
+    <type>Other</type>
+  </Question>
+
+  <Question>
+    <id>9</id>
+    <text>How many colors appear at least three times?</text>
+    <type>Other</type>
+  </Question>
+
+  <Question>
+    <id>10</id>
+    <text>How many numbers are missing? </text>
+    <type>Other</type>
+  </Question>
+
+  <Question>
+    <id>11</id>
+    <text>How many of the following cards do you see: green 1, black 5, pink 7? </text>
+    <type>Rack</type>
+  </Question>
+
+  <Question>
+    <id>12</id>
+    <text>Do you see more 3s or more pink 6s? </text>
+    <type>Compare</type>
+    <Criteria>
+      <Left>
+        <Number>3</Number>
+      </Left>
+      <Right>
+        <Number>6</Number>
+      </Right>
+    </Criteria>
+  </Question>
+
+  <Question>
+    <id>13</id>
+    <text>Do you see more green 6s or more yellow 7s? </text>
+    <type>Compare</type>
+    <Criteria>
+      <Left>
+        <Number>6</Number>
+        <Color>Green</Color>
+      </Left>
+      <Right>
+        <Number>7</Number>
+        <Color>Yellow</Color>
+      </Right>
+    </Criteria>
+  </Question>
+
+  <Question>
+    <id>14</id>
+    <text>Do you see more 2s or more yellow 7s? </text>
+    <type>Compare</type>
+    <Criteria>
+      <Left>
+        <Number>2</Number>
+
+      </Left>
+      <Right>
+        <Number>7</Number>
+        <Color>Yellow</Color>
+      </Right>
+    </Criteria>
+  </Question>
+
+  <Question>
+    <id>15</id>
+    <text>Do you see more pink 6s or more green 6s? </text>
+    <type>Compare</type>
+    <Criteria>
+      <Left>
+        <Number>6</Number>
+        <Color>Pink</Color>
+      </Left>
+      <Right>
+        <Number>6</Number>
+        <Color>Green</Color>
+      </Right>
+    </Criteria>
+  </Question>
+
+  <Question>
+    <id>16</id>
+    <text>Do you see more blue 7s or more 7s of other colors? </text>
+    <type>Compare</type>
+    <Criteria>
+      <Left>
+        <Number>7</Number>
+        <Color>Blue</Color>
+      </Left>
+      <Right>
+        <Number>7</Number>
+
+      </Right>
+    </Criteria>
+  </Question>
+
+  <Question>
+    <id>17</id>
+    <text>Do you see more brown or more blue numbers? </text>
+    <type>Compare</type>
+    <Criteria>
+      <Left>
+
+        <Color>Green</Color>
+      </Left>
+      <Right>
+
+        <Color>Blue</Color>
+      </Right>
+    </Criteria>
+  </Question>
+
+  <Question>
+    <id>18</id>
+    <text>Do you see more red or more pink numbers? </text>
+    <type>Compare</type>
+    <Criteria>
+      <Left>
+
+        <Color>Red</Color>
+      </Left>
+      <Right>
+
+        <Color>Pink</Color>
+      </Right>
+    </Criteria>
+  </Question>
+
+  <Question>
+    <id>19</id>
+    <text>Do you see more green or more blue numbers? </text>
+    <type>Compare</type>
+    <Criteria>
+      <Left>
+
+        <Color>Green</Color>
+      </Left>
+      <Right>
+
+        <Color>Blue</Color>
+      </Right>
+    </Criteria>
+  </Question>
+
+  <Question>
+    <id>20</id>
+    <text>Do you see more yellow or more pink numbers? </text>
+    <type>Compare</type>
+    <Criteria>
+      <Left>
+
+        <Color>Yellow</Color>
+      </Left>
+      <Right>
+
+        <Color>Pink</Color>
+      </Right>
+    </Criteria>
+  </Question>
+
+  <Question>
+    <id>21</id>
+    <text>Do you see more black or more brown numbers? </text>
+    <type>Compare</type>
+    <Criteria>
+      <Left>
+
+        <Color>Black</Color>
+      </Left>
+      <Right>
+
+        <Color>Brown</Color>
+      </Right>
+    </Criteria>
+  </Question>
+
+  <Question>
+    <id>22</id>
+    <text>Do you see more black or more red numbers? </text>
+    <type>Compare</type>
+    <Criteria>
+      <Left>
+
+        <Color>Black</Color>
+      </Left>
+      <Right>
+
+        <Color>Red</Color>
+      </Right>
+    </Criteria>
+  </Question>
+
+  <Question>
+    <id>23</id>
+    <text>Do you see more green or more yellow numbers? </text>
+    <type>Compare</type>
+    <Criteria>
+      <Left>
+
+        <Color>Green</Color>
+      </Left>
+      <Right>
+
+        <Color>Yellow</Color>
+      </Right>
+    </Criteria>
+  </Question>
+
+</Questions>

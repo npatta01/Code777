@@ -1,0 +1,37 @@
+﻿<!-- A control for a question -->
+    <UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:WP7Panels="clr-namespace:WP7Panels;assembly=WP7Panels"
+             x:Class="Code777.View.QuestionControl"
+             mc:Ignorable="d"
+			 xmlns:views="clr-namespace:Code777.View"
+             FontFamily="{StaticResource PhoneFontFamilyNormal}"
+             FontSize="{StaticResource PhoneFontSizeNormal}"
+             Foreground="{StaticResource PhoneForegroundBrush}"
+             d:DesignHeight="480"
+             d:DesignWidth="480"
+             DataContext="{Binding Game, Source={StaticResource Locator}}">
+
+    <Grid x:Name="LayoutRoot">
+        <WP7Panels:DockPanel d:DataContext="{Binding PreviouslyAnsweredQuestion}">
+            <TextBlock  WP7Panels:DockPanel.Dock="Top"
+                        d:Text="questopm"
+                        Text="{Binding TurnAnswered}"
+                        TextWrapping="Wrap"
+                        FontSize="{StaticResource PhoneFontSizeLarge}" TextAlignment="Center" />
+            <TextBlock  WP7Panels:DockPanel.Dock="Top"
+                        d:Text="questopm"
+                        Text="{Binding Question}" 
+						TextWrapping="Wrap" FontSize="{StaticResource PhoneFontSizeMedium}"/>
+            <views:PlayerView  WP7Panels:DockPanel.Dock="Left"
+                        
+                        DataContext="{Binding Player}" />
+            <TextBlock  WP7Panels:DockPanel.Dock="Right"
+                        
+                        Text="{Binding Answer}" FontSize="{StaticResource PhoneFontSizeLarge}" TextWrapping="Wrap" TextAlignment="Center" />
+
+        </WP7Panels:DockPanel>
+    </Grid>
+</UserControl>

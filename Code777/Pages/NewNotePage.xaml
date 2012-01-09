@@ -1,0 +1,90 @@
+﻿<!-- Page where user can create new note -->
+    <phone:PhoneApplicationPage 
+    x:Class="Code777.NewNotePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                            xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+                            xmlns:Preview="clr-namespace:Phone7.Fx.Controls;assembly=Phone7.Fx"
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+                            DataContext="{Binding Game, Source={StaticResource Locator}}"
+                            mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="CODE 777" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="Create Note" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        
+
+<StackPanel Grid.Row="1">
+
+        <toolkit:ListPicker x:Name="listPicker"
+                            ExpansionMode="FullScreenOnly"
+                            Header="Observations"
+                            ItemsSource="{Binding Observations}"  >
+
+
+            <toolkit:ListPicker.FullModeItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal"
+                                Margin="16 21 0 20" MaxWidth="300">
+
+                        <TextBlock Text="{Binding}"
+                                   Margin="16 0 0 0"
+                                   FontSize="{StaticResource PhoneFontSizeLarge}"
+                                   FontFamily="{StaticResource PhoneFontFamilyLight}"
+                                   MaxWidth="300"
+                                   TextWrapping="Wrap"/>
+                    </StackPanel>
+                </DataTemplate>
+            </toolkit:ListPicker.FullModeItemTemplate>
+        </toolkit:ListPicker>
+            <TextBlock Text="Custom Note" Height="48" RenderTransformOrigin="0.5,0.833" TextAlignment="Center" FontWeight="Bold" />
+            <TextBox Height="253" Text="{Binding SelectedItem, ElementName=listPicker, Mode=TwoWay}" x:Name="NewNote">
+                
+            </TextBox>
+
+
+        </StackPanel>
+        
+        <Preview:BindableApplicationBar x:Name="AppBar"
+                                        BarOpacity="1.0">
+            
+            <Preview:BindableApplicationBarIconButton Command="{Binding SaveNote}"
+                                                      CommandParameter="{Binding Text  , ElementName=NewNote}"
+                                                      
+                                                      IconUri="/Icons/save.png"
+                                                      Text="SaveNote" />
+
+        </Preview:BindableApplicationBar>
+    </Grid>
+ 
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>
