@@ -1,52 +1,96 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Code777 by npatta01</title>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Code777 : Window Phone 7 Code 777" />
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Code777</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Code777</h1>
-        <p>Window Phone 7 Code 777</p>
 
-        <p class="view"><a href="https://github.com/npatta01/Code777">View the Project on GitHub <small>npatta01/Code777</small></a></p>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/npatta01/Code777">View on GitHub</a>
 
+          <h1 id="project_title">Code777</h1>
+          <h2 id="project_tagline">Window Phone 7 Code 777</h2>
 
-        <ul>
-          <li><a href="https://github.com/npatta01/Code777/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/npatta01/Code777/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/npatta01/Code777">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <p>CODE 777
-Author : Nidhin Pattaniyil <a href="mailto:ntp5633@rit.edu">ntp5633@rit.edu</a>
-INFO ABOUT GAME:
-    Code 777 is a logic deduction game created by Robert Abbott and Alex Randolph. The games is played from 2-4 players. Each player is given a rack with 3 cards (a card has a color and a number). The player's own cards are not visible to them but to their opponent. Each turn, a player takes a question from the deck. A question might be like (on how many racks are there green cards?). The player answers truthfully and their answer to the question helps the other players figure out their own cards. The player to first guess their own cards, wins the game. If, he guesses wrong, he gets a new set of cards. 
-WHY I WROTE IT:
-    For one of the classes that I took, we were tasked to create the Code 777 game for any mobile development platform. I actually chose Windows Phone 7 over android because I wanted to improve my c# skills. This project was my first major c#, Windows Phone 7 application, So, far in my academic career, before this assignment all my assignments required a console based UI. My first experience with GUI programming was with Java Swing, where I was programmatically creating the UI and using code to update a specific textbox. There was a tight coupling between the UI and the model of my application. . Using the MVVM design pattern, I was able to cleanly separate my application. Throughout the course of designing the application, I kept changing how the application would look. And since my view was only loosely coupled with the view model, I was able to experiment freely. I was surprised at how the application turned out considering I had about 5 weeks and this was my first WP7 project. 
-Some Regrets:
-    Since this was a project where I was teaching myself, I wonder if I “learned” the best way to do something. For example, in my project I have a tight coupling between my vie model and view. Coud I have avoided it?  Since I wanted to properly follow the MVVM design pattern, the project used an external framework. Part of the time spend was learning to use the framework. I wonder if I should have focused on the built in tools and then slowly explored the framework. </p>
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/npatta01/Code777/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/npatta01/Code777/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
 
-<p>*Screenshots of the application can be found in the file Screenshot.pdf
-*while writing my project, I used a mercurial repository,so the .hg directory is included and the remote url is
-<a href="https://icarus01.kilnhg.com/Repo/MobileComputing/Group/Code777">https://icarus01.kilnhg.com/Repo/MobileComputing/Group/Code777</a>. My final changes were pusheed to a github repo though</p>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>
+<a name="game-info" class="anchor" href="#game-info"><span class="octicon octicon-link"></span></a>Game Info:</h2>
+
+<p>Code 777 is a logic deduction game created by Robert Abbott and Alex Randolph. </p>
+
+<p>The games is played from 2-4 players. Each player is given a rack with 3 cards (a card has a color and a number). The player's own cards are not visible to them but to their opponent. Each turn, a player takes a question from the deck. A question might be like (on how many racks are there green cards?). </p>
+
+<h2>
+<a name="prerequisites-for-running-project" class="anchor" href="#prerequisites-for-running-project"><span class="octicon octicon-link"></span></a>Prerequisites for running project</h2>
+
+<ul>
+<li>Visual Studio 2010 and above </li>
+<li>Windows phone 7.5 and above</li>
+<li><a href="http://mvvmlight.codeplex.com/">Mvvm toolkit</a></li>
+</ul><h2>
+<a name="screenshots" class="anchor" href="#screenshots"><span class="octicon octicon-link"></span></a>Screenshots</h2>
+
+<p><strong>Start Screen</strong> </p>
+
+<p>When app is opened. Press New game to start</p>
+
+<p><img src="images/start_screen.png" alt=""></p>
+
+<p><strong>Main Screen</strong></p>
+
+<p>After New Game, this screen shows the players, their cards.
+When a question is answered, it show on the bottom. The page also has white buttons on the bottom corresponding to other screens </p>
+
+<p><img src="images/main_screen.png" alt=""></p>
+
+<p><strong>Answering Question Page</strong></p>
+
+<p>Page to answer questions</p>
+
+<p><img src="images/answering.png" alt=""></p>
+
+<p><strong>Questions Answered Page</strong></p>
+
+<p>List of questions answered<br><img src="images/questions.png" alt=""></p>
+
+<p><strong>Guess Cards Page</strong></p>
+
+<p>Page where you can guess card. If you have three cards with state yes, then if you press the guess button, the program will check your guess 
+<img src="images/guess.png" alt=""></p>
+
+<p><strong>Notes Page</strong> </p>
+
+<p>Button to create and delete Note. Click the create note, will take you to a page to select note.
+<img src="images/notes.png" alt=""></p>
       </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/npatta01">npatta01</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Code777 maintained by <a href="https://github.com/npatta01">npatta01</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+
               <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -57,6 +101,7 @@ Some Regrets:
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
+
 
   </body>
 </html>
